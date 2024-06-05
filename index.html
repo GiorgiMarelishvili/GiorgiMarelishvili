@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gio's POrtfolio Website</title> 
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/close.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/menu.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1>Giorgi Marelishvili</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><i class="gg-close" onclick="closemenu()"></i></li>
+          </ul>
+          <i class="gg-menu" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>
+            Hi, I'm <span> Giorgi</span><br />
+            From Georgia
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--About-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./assets/gio.jpg" alt="" height="500px" width="700px" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Giorgi Marelishvili. I was born on July 31, 2009 in the
+              city of Telavi, Georgia.I am a school student.I am studying in
+              Kurdglaauir public school.I am in 9th grade.Currently I am
+              learning programming.Programming is my hobby and I spend a lot of
+              time on it.Currently I know Frontend development
+              (HTML/CSS/JS/REACT JS). I also know computer program (PYTHON). I
+              have a frontend developer certificate. I am studying Backend
+              Development. I am not currently employed, although I do websats at
+              will.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" ondblclick="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab">
+              <ul>
+                <li><span>Python</span> - Part of Backend Development</li>
+                <li>
+                  <span>Frontend Development</span> - Designing Web/App
+                  interfaces
+                </li>
+                <li><span>Game Development</span> - Making 3d Games</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Worked</span> - Code It Academy-2023</li>
+                <li><span>Making</span> - Websites</li>
+                <li><span>Making</span> - 3d Games</li>
+              </ul>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>Studied</span> - in Code It</li>
+                  <li><span>Learning</span> - Backedn development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  services-->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <h2>Web Design</h2>
+              <p>
+                Web design encompasses many different skills and disciplines in
+                the production and maintenance of websites. The different areas
+                of web design include web graphic design; user interface design
+                (UI design); authoring, including standardised code and
+                proprietary software; user experience design (UX design); and
+                search engine optimization. Often many individuals will work in
+                teams covering different aspects of the design process, although
+                some designers will cover them all.[1] The term "web design" is
+                normally used to describe the design process relating to the
+                front-end (client side) design of a website including writing
+                markup. Web design partially overlaps web engineering in the
+                broader scope of web development. Web designers are expected to
+                have an awareness of usability and be up to date with web
+                accessibility guidelines.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <h2>UI/UX Design</h2>
+              <p>
+                User experience design (UX design, UXD, UED, or XD) defines the
+                experience a user would go through when interacting with a
+                company, its services, and its products.[1] User experience
+                design is a user centered design approach because it considers
+                the user's experience when using a product or platform.[2]
+                Research, data analysis, and test results drive design decisions
+                in UX design rather than aesthetic preferences and opinions.
+                Unlike user interface design, which focuses solely on the design
+                of a computer interface, UX design encompasses all aspects of a
+                user's perceived experience with a product or website, such as
+                its usability, usefulness, desirability, brand perception, and
+                overall performance.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <h2>Web Design</h2>
+              <p>
+                i can make beautifull websites for good price. Add features and
+                functionality to your online store. From dropshipping to social
+                media marketing, the Shopify App Store has over 6,000 apps to
+                help you start, manage, and grow your business.ost your entire
+                website on Shopify. You have complete control over the look and
+                feel. From its layout, to content and colors. Choose from
+                templates and themes in the Shopify theme store, or build it
+                from scratch with full access to the HTML and CSS of your store.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- -----------Contact--------- -->
+      </div>
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact me</h1>
+              <p>Email-giorgimarelishvili13@gmail.com</p>
+              <p>Phone-+995 574-11-05-31</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/giorgi.marelishvili.94"
+                  >Facebook</a
+                >
+              </div>
+              <a href="./assets/My CV.pdf" download class="btn btn2"
+                >Dowload CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Nmae"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Sumbit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright c Giorgi.Made with heart by Easy tutorial</p>
+      </div>
+    </div>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "<https://script.google.com/macros/s/AKfycbypspBZW6neLSh2v_B83bwN7YaQM6vjFHhXfHa9L3rAMVWQQxnWRVR9Iule_V3CvMhg8Q/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
